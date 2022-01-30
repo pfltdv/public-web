@@ -1,0 +1,90 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color:white;
+    background-color: black;
+    margin:0;
+    padding: 0;
+    background-image: url(../images/smoke.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    text-shadow: 1px 1px silver;
+    z-index:1;
+}
+
+header > .container {
+    width:100%;
+}
+
+header h1 {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    right:1rem;
+    top: .4rem;
+}
+
+header h1 img {
+    vertical-align: middle;
+}
+
+.project{
+    position: absolute;
+    z-index: 1000;
+    width: 400px;
+    top: 20vh;
+    bottom: 20vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #8181814a;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px #ffffff50;
+    min-height: 350px;
+}
+
+.project img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.project a{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.project a.title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.project a.description{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.project a.github{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.project a.github img{
+    width: 2rem;
+}
