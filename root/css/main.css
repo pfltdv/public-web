@@ -42,20 +42,19 @@ header h1 img {
 .project{
     position: absolute;
     z-index: 1000;
-    width: 400px;
+    width: 300px;
     top: 20vh;
-    bottom: 20vh;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #8181814a;
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 1px 1px #ffffff50;
-    min-height: 350px;
+    min-height: 200px;
 }
 
 .project img{
-    width: 100%;
+    width: 85%;
     border-radius: .5rem;
 }
 
@@ -71,20 +70,59 @@ header h1 img {
 .project a.title{
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .project a.description{
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .project a.github{
-    font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: .2rem;
 }
 
 .project a.github img{
-    width: 2rem;
+    width: 1.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 5vh;
+    padding-bottom: 5vh;
+    z-index:1;
+}
+
+footer > .container {
+    width:100%;
+}
+
+footer a {
+    font-size: .8rem;
+    color:white;
+    text-decoration: none;
+}
+
+footer a::after {
+    content: "|";
+    padding-left: .5rem;
+}
+
+footer a:last-child::after {
+    content: "";
+}
+
+@media (max-width: 500px) {
+    header{
+        text-shadow: 0 0 transparent;
+    }
+    header h1{
+        font-size: 1rem;
+    }
+    header h1 img {
+        width: 1.5rem;
+    }
 }
