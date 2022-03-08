@@ -132,7 +132,7 @@ commands.logout = {
     }
 }
 
-commands.projects = {
+/*commands.projects = {
     info: "Shows projects",
     usage: "projects",
     description: "Displays open source project lists",
@@ -146,6 +146,7 @@ commands.projects = {
 
     }
 }
+*/
 
 commands.whoami = {
     info: "print effective userid",
